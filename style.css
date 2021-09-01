@@ -166,6 +166,7 @@ body {
   text-align: center;
 }
 #bio #info h3 {
+  letter-spacing: 0.07em;
   font-size: 20px;
   justify-self: left;
   color: white;
