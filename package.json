@@ -1,0 +1,16 @@
+{
+  "name": "Portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss style.css",
+    "run:sass": "node-sass scss/main.scss style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

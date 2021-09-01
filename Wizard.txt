@@ -1,0 +1,11 @@
+*All photos
+*All old games
+*.fbx
+
+NodeJs
+ReactJs?
+ASP.NET
+Actual responsive website on github.io
+Upload everything on github
+
+Lines of code

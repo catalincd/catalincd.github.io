@@ -1,0 +1,7 @@
+Game
+	Name
+	Href
+	Repository Href
+	Features
+	Controls
+	Languages

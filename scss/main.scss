@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+$body-background: rgb(11,
+0,
+43);
+$accent-color: white;
+$border-accent: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $body-background;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+#cards {
+    width: 90%;
+    max-width: 1500px;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.titleLine {
+    letter-spacing: 0.25em;
+    color: $accent-color;
+    width: 90%;
+    margin: 1rem auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: $border-accent 1px solid;
+}
+
+.breakerLine {
+    width: 90%;
+    height: 1px;
+    background-color: $border-accent;
+    margin: 1rem auto;
+}
+
+.card {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 150%;
+    border-radius: .4rem;
+    overflow: hidden;
+    position: relative;
+    filter: brightness(0.9);
+    box-shadow: 0px 0px 1rem black;
+    align-self: center;
+    justify-self: center;
+    transition: all 0.2s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.075);
+        filter: brightness(1.1) saturate(1.1);
+        box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.5);
+        .glow {
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .glow {
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0) 14%, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 0) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        opacity: 0;
+        transition: inherit;
+    }
+    .bottomText {
+        border-radius: .4rem;
+        color: $accent-color;
+        width: 100%;
+        font-size: 12px;
+        height: 4em;
+        line-height: 3;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-90%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        .h1Text {
+            font-weight: 400;
+        }
+    }
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    margin: 0 0.5em;
+    color: $accent-color;
+}
+
+#bio {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    #profileContainer {
+        width: 16rem;
+        height: 16rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        border-right: $border-accent solid 1px;
+        padding: 2rem;
+        #profile {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            padding: 2rem;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                filter: brightness(90%);
+                transition: all 0.7s ease;
+            }
+            &:hover {
+                img {
+                    width: 120%;
+                    height: 120%;
+                    filter: brightness(100%);
+                }
+            }
+        }
+    }
+    #info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        justify-items: start;
+        text-align: center;
+        h3 {
+            font-size: 20px;
+            justify-self: left;
+            color: $accent-color;
+        }
+        .material-icons-outlined {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #bio {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #bio {
+        width: 95%;
+    }
+}
