@@ -1,6 +1,6 @@
 var json;
-//$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
-$.getJSON("http://localhost:5000/", function(data) {
+$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
+    //$.getJSON("http://localhost:5000/", function(data) {
     json = data;
     loadData(json.info);
     loadSkills(json.skills)
