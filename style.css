@@ -170,9 +170,51 @@ body {
   font-size: 20px;
   justify-self: left;
   color: white;
+  white-space: nowrap;
 }
 #bio #info .material-icons-outlined {
   font-size: 30px;
+}
+
+#Skills {
+  width: 100%;
+  display: grid;
+}
+#Skills #skillsTable {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+#Skills #skillsTable .skillsColumn h2 {
+  margin-bottom: 1rem;
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+}
+#Skills #skillsTable .skillsColumn .skill {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+}
+#Skills #skillsTable .skillsColumn .skill h3 {
+  line-height: 1.75;
+  font-size: 20px;
+  color: white;
+}
+#Skills #skillsTable .skillsColumn .skill .skillIcon {
+  width: 1.5rem;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -183,6 +225,11 @@ body {
 @media only screen and (max-width: 1100px) {
   #bio {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #bio #info h3 {
+    white-space: normal;
   }
 }
 

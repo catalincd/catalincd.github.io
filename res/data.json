@@ -1,0 +1,206 @@
+{
+    "info": [{
+            "icon": "badge",
+            "text": "Cătălin-Constantin Dumitrescu"
+        },
+        {
+            "icon": "cake",
+            "text": "12 Nov 2002"
+        },
+        {
+            "icon": "school",
+            "text": "Colegiul Național \"Ecaterina Teodoroiu\" (2017-2021)"
+        },
+        {
+            "icon": "location_city",
+            "text": "UVT FMI Informatică-Română"
+        }
+    ],
+    "skills": [{
+            "title": "Languages",
+            "lines": [{
+                    "icon": "cpp",
+                    "text": "C++"
+                },
+                {
+                    "icon": "cs",
+                    "text": "C#"
+                },
+                {
+                    "icon": "javascript",
+                    "text": "JavaScript"
+                },
+                {
+                    "icon": "scite",
+                    "text": "AngelScript"
+                },
+                {
+                    "icon": "php",
+                    "text": "PHP"
+                },
+                {
+                    "icon": "sql",
+                    "text": "SQL"
+                }
+            ]
+        },
+        {
+            "title": "Environments",
+            "lines": [{
+                    "icon": "dotnet",
+                    "text": ".NET"
+                },
+                {
+                    "icon": "unity",
+                    "text": "Unity"
+                },
+                {
+                    "icon": "ethanon",
+                    "text": "Ethanon Engine"
+                },
+                {
+                    "icon": "nodejs",
+                    "text": "NodeJs"
+                },
+                {
+                    "icon": "laravel",
+                    "text": "Laravel"
+                },
+                {
+                    "icon": "oracle",
+                    "text": "Oracle"
+                },
+                {
+                    "icon": "react",
+                    "text": "React Native"
+                }
+            ]
+        },
+        {
+            "title": "Tools",
+            "lines": [{
+                    "icon": "vs",
+                    "text": "Visual Studio"
+                },
+                {
+                    "icon": "vscode",
+                    "text": "Visual Studio Code"
+                },
+                {
+                    "icon": "vim",
+                    "text": "Vim"
+                },
+                {
+                    "icon": "sublime",
+                    "text": "Sublime Text"
+                },
+                {
+                    "icon": "blender",
+                    "text": "Blender"
+                },
+                {
+                    "icon": "photoshop",
+                    "text": "Photoshop"
+                }
+            ]
+        }
+
+    ],
+    "games": [{
+            "name": "Bamboo Jump",
+            "thumbnail": "bmbjmp",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Maze",
+            "thumbnail": "maze",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Shoota",
+            "thumbnail": "shoota",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "The Escape From Mars",
+            "thumbnail": "tefm",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "HEX Runner",
+            "thumbnail": "runner",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "HEX Balance",
+            "thumbnail": "balance",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "HEX Motion",
+            "thumbnail": "motion",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "HEX Blocks",
+            "thumbnail": "blocks",
+            "images": [],
+            "href": "",
+            "repo": "",
+            "features": "",
+            "description": "",
+            "platforms": "",
+            "controls": "",
+            "tools": ""
+        }
+    ]
+}
