@@ -227,8 +227,86 @@ body {
     }
 }
 
+.visibleImg {
+    opacity: 1;
+}
+
+.invisibleImg {
+    opacity: 0;
+}
+
+#galleryContainer {
+    width: 90%;
+    margin: 2rem auto;
+    transition: all 0.5s ease;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    #imgContainer {
+        position: relative;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        img {
+            transition: all 0.25s ease;
+            max-height: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .button {
+            cursor: pointer;
+            z-index: 9;
+        }
+        #next {
+            position: absolute;
+            left: 98%;
+            top: 50%;
+            transform: translateX(-100%) translateY(-50%);
+        }
+        #prev {
+            position: absolute;
+            left: 2%;
+            top: 50%;
+            transform: translateX(0%) translateY(-50%);
+        }
+    }
+}
+
 .round {
     border-radius: 50%;
+}
+
+.arrow {
+    border: solid #999;
+    border-width: 0 0.75rem 0.75rem 0;
+    display: inline-block;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+.arrow:hover {
+    box-shadow: 0.2rem 0.2rem 3px 1px black;
+    border-color: white;
+}
+
+.arrow:active {
+    scale: 0.75;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 @media only screen and (max-width: 1400px) {

@@ -1,10 +1,12 @@
 var json;
-$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
-    //$.getJSON("http://localhost:5000/", function(data) {
+var projects;
+//$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
+$.getJSON("http://localhost:5000/", function(data) {
     json = data;
+    projects = json.projects;
     loadData(json.info);
     loadSkills(json.skills)
-    loadProjects(json.projects);
+    loadProjects(json.mainProjects);
     loadGames(json.games);
 });
 
@@ -32,27 +34,30 @@ function loadData(info) {
     }
 }
 
-function loadProjects(projects) {
-    for (var i = 0; i < projects.length; i++) {
-        var img = `images/${projects[i].thumbnail}.png`;
-        $("#projects").append(`<a href="#" class="card">
+function loadProjects(mainProjects) {
+    for (var i = 0; i < mainProjects.length; i++) {
+        var id = mainProjects[i].id;
+        var img = `images/${projects[id].thumbnail}.png`;
+        $("#projects").append(`<a href="${projects[id].href}" class="card">
 	    						<div class="glow"></div>
 	                            <img src="${img}">
 	                            <div class="bottomText">
-	                                <h1 class="h1Text">${projects[i].name}</h1>
+	                                <h1 class="h1Text">${projects[id].name}</h1>
 	                            </div>
 	                        </a>`);
     }
 }
 
 function loadGames(games) {
+    console.log(projects);
     for (var i = 0; i < games.length; i++) {
-        var img = `images/${games[i].thumbnail}.png`;
-        $("#cards").append(`<a href="#" class="card">
+        var id = games[i].id;
+        var img = `images/${projects[id].thumbnail}.png`;
+        $("#cards").append(`<a href="${projects[id].href}" class="card">
 	    						<div class="glow"></div>
 	                            <img src="${img}">
 	                            <div class="bottomText">
-	                                <h1 class="h1Text">${games[i].name}</h1>
+	                                <h1 class="h1Text">${projects[id].name}</h1>
 	                            </div>
 	                        </a>`);
     }
