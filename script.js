@@ -4,6 +4,7 @@ $.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/
     json = data;
     loadData(json.info);
     loadSkills(json.skills)
+    loadProjects(json.projects);
     loadGames(json.games);
 });
 
@@ -28,6 +29,19 @@ function loadSkills(skills) {
 function loadData(info) {
     for (var i = 0; i < info.length; i++) {
         $("#info").append(`<h3 class="material-icons-outlined">${info[i].icon}</h3><h3>${info[i].text}</h3>`);
+    }
+}
+
+function loadProjects(projects) {
+    for (var i = 0; i < projects.length; i++) {
+        var img = `images/${projects[i].thumbnail}.png`;
+        $("#projects").append(`<a href="#" class="card">
+	    						<div class="glow"></div>
+	                            <img src="${img}">
+	                            <div class="bottomText">
+	                                <h1 class="h1Text">${projects[i].name}</h1>
+	                            </div>
+	                        </a>`);
     }
 }
 

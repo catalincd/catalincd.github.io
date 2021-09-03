@@ -23,7 +23,8 @@ body {
     letter-spacing: 0.1em;
 }
 
-#cards {
+#cards,
+#projects {
     width: 90%;
     max-width: 1500px;
     margin: 4rem auto;
@@ -42,6 +43,10 @@ body {
     text-transform: uppercase;
     text-align: center;
     border-bottom: $border-accent 1px solid;
+}
+
+.breakerMargin {
+    margin-top: 10rem;
 }
 
 .breakerLine {
