@@ -16,96 +16,6 @@
             "text": "UVT FMI Informatică-Română"
         }
     ],
-    "skills": [{
-            "title": "Languages",
-            "lines": [{
-                    "icon": "cpp",
-                    "text": "C++"
-                },
-                {
-                    "icon": "cs",
-                    "text": "C#"
-                },
-                {
-                    "icon": "javascript",
-                    "text": "JavaScript"
-                },
-                {
-                    "icon": "scite",
-                    "text": "AngelScript"
-                },
-                {
-                    "icon": "php",
-                    "text": "PHP"
-                },
-                {
-                    "icon": "sql",
-                    "text": "SQL"
-                }
-            ]
-        },
-        {
-            "title": "Environments",
-            "lines": [{
-                    "icon": "dotnet",
-                    "text": ".NET"
-                },
-                {
-                    "icon": "unity",
-                    "text": "Unity"
-                },
-                {
-                    "icon": "ethanon",
-                    "text": "Ethanon Engine"
-                },
-                {
-                    "icon": "nodejs",
-                    "text": "NodeJs"
-                },
-                {
-                    "icon": "laravel",
-                    "text": "Laravel"
-                },
-                {
-                    "icon": "oracle",
-                    "text": "Oracle"
-                },
-                {
-                    "icon": "react",
-                    "text": "React Native"
-                }
-            ]
-        },
-        {
-            "title": "Tools",
-            "lines": [{
-                    "icon": "vs",
-                    "text": "Visual Studio"
-                },
-                {
-                    "icon": "vscode",
-                    "text": "Visual Studio Code"
-                },
-                {
-                    "icon": "vim",
-                    "text": "Vim"
-                },
-                {
-                    "icon": "sublime",
-                    "text": "Sublime Text"
-                },
-                {
-                    "icon": "blender",
-                    "text": "Blender"
-                },
-                {
-                    "icon": "photoshop",
-                    "text": "Photoshop"
-                }
-            ]
-        }
-
-    ],
     "mainProjects": [{
             "id": "0"
         },
@@ -144,19 +54,100 @@
             "id": "11"
         }
     ],
-    "projects": [{
-            "name": "InfoSport",
-            "thumbnail": "infosport",
-            "images": "1",
-            "href": "https://infosport.ro",
-            "repo": "",
-            "features": "",
-            "description": "",
-            "platforms": "",
-            "controls": "",
-            "tools": ""
+    "csprojects": [{
+            "id": "12"
         },
         {
+            "id": "13"
+        }
+    ],
+    "skills": [
+        ["0", "1", "2", "3", "4", "5"],
+        ["6", "7", "8", "9", "10", "11", "12"],
+        ["13", "14", "15", "16", "17", "18"]
+    ],
+    "technologies": [{
+            "icon": "cpp",
+            "text": "C++"
+        },
+        {
+            "icon": "cs",
+            "text": "C#"
+        },
+        {
+            "icon": "javascript",
+            "text": "JavaScript"
+        },
+        {
+            "icon": "scite",
+            "text": "AngelScript"
+        },
+        {
+            "icon": "php",
+            "text": "PHP"
+        },
+        {
+            "icon": "sql",
+            "text": "SQL"
+        },
+        {
+            "icon": "dotnet",
+            "text": ".NET"
+        },
+        {
+            "icon": "unity",
+            "text": "Unity"
+        },
+        {
+            "icon": "ethanon",
+            "text": "Ethanon Engine"
+        },
+        {
+            "icon": "nodejs",
+            "text": "NodeJs"
+        },
+        {
+            "icon": "laravel",
+            "text": "Laravel"
+        },
+        {
+            "icon": "oracle",
+            "text": "Oracle"
+        },
+        {
+            "icon": "react",
+            "text": "React Native"
+        }, {
+            "icon": "vs",
+            "text": "Visual Studio"
+        },
+        {
+            "icon": "vscode",
+            "text": "Visual Studio Code"
+        },
+        {
+            "icon": "vim",
+            "text": "Vim"
+        },
+        {
+            "icon": "sublime",
+            "text": "Sublime Text"
+        },
+        {
+            "icon": "blender",
+            "text": "Blender"
+        },
+        {
+            "icon": "photoshop",
+            "text": "Photoshop"
+        },
+        {
+            "icon": "adt",
+            "text": "Eclipse ADT"
+        }
+    ],
+
+    "projects": [{
             "name": "Stairs Designer",
             "thumbnail": "stairs",
             "images": "1",
@@ -171,36 +162,88 @@
         {
             "name": "Cyberspace",
             "thumbnail": "cyberspace",
-            "images": "1",
-            "href": "https://play.google.com/store/apps/details?id=com.encrypt3d.cyberspace",
+            "images": "5",
+            "href": "project.html?id=1",
             "repo": "",
-            "features": "",
+            "features": ["cs", "unity", "blender", "photoshop"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Google Playstore",
+                    "icon": "playstore",
+                    "href": "https://play.google.com/store/apps/details?id=com.encrypt3d.cyberspace"
+                },
+                {
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Cyberspace v0.32.apk"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Cyberspace"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
         {
             "name": "SkinDb",
             "thumbnail": "skindb",
-            "images": "1",
-            "href": "project.html?id=3",
+            "images": "3",
+            "href": "project.html?id=2",
             "repo": "",
-            "features": "",
+            "features": ["javascript", "react"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/SkinDb.apk"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/SkinDb"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "InfoSport",
+            "thumbnail": "infosport",
+            "images": "1",
+            "href": "https://infosport.ro",
+            "repo": "",
+            "features": [],
+            "description": "",
+            "platforms": [],
             "controls": "",
             "tools": ""
         },
         {
             "name": "Bamboo Jump",
             "thumbnail": "bmbjmp",
-            "images": "1",
+            "images": "4",
             "href": "project.html?id=4",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Bamboo Jump Final.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Bamboo-Jump-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
@@ -210,9 +253,24 @@
             "images": "1",
             "href": "project.html?id=5",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Maze v0.5.2.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Maze-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
@@ -222,9 +280,24 @@
             "images": "10",
             "href": "project.html?id=6",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Shoota v0.25.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Shoota-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
@@ -234,21 +307,46 @@
             "images": "1",
             "href": "project.html?id=7",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/TEFM-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
         {
             "name": "HEX Runner",
             "thumbnail": "runner",
-            "images": "1",
+            "images": "5",
             "href": "project.html?id=8",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Hex Runner v0.26.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Hex Runner Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
@@ -258,9 +356,24 @@
             "images": "1",
             "href": "project.html?id=9",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Balance v0.1.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Balance-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
@@ -270,21 +383,95 @@
             "images": "3",
             "href": "project.html?id=10",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Blocks.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Blocks-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
             "controls": "",
             "tools": ""
         },
         {
             "name": "HEX Blocks",
             "thumbnail": "blocks",
-            "images": "1",
+            "images": "5",
             "href": "project.html?id=11",
             "repo": "",
-            "features": "",
+            "features": ["scite", "ethanon", "photoshop", "adt"],
             "description": "",
-            "platforms": "",
+            "platforms": [{
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "downloads/Motion.apk"
+                },
+                {
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Motion-Windows.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ethanon-Games"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Sorting Visualizer",
+            "thumbnail": "sort",
+            "images": "3",
+            "href": "project.html?id=12",
+            "repo": "",
+            "features": ["cs", "vs"],
+            "description": "",
+            "platforms": [{
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Sort Visualizer.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Sorting-Visualisation"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Ecosoft",
+            "thumbnail": "ecosoft",
+            "images": "1",
+            "href": "project.html?id=13",
+            "repo": "",
+            "features": ["cs", "vs", "sql"],
+            "description": "",
+            "platforms": [{
+                    "name": "Windows",
+                    "icon": "windows",
+                    "href": "downloads/Ecosoft.zip"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Ecosoft"
+                }
+            ],
             "controls": "",
             "tools": ""
         }

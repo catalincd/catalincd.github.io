@@ -1,15 +1,17 @@
 const id = parseInt(window.location.search.substr(4));
 var json;
 var project;
+var technologies;
 var imgTotal;
 var imgName;
 var visible = 1;
 var invisible = 2;
 var imgCurrent = 0;
-//$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
-$.getJSON("http://localhost:5000/", function(data) {
+$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
+    //$.getJSON("http://localhost:5000/", function(data) {
     json = data;
     project = json.projects[id];
+    technologies = json.technologies;
     imgTotal = project.images;
     imgName = getImg(project.thumbnail + 0);
     loadData();
@@ -22,6 +24,18 @@ function loadData() {
     window.document.title = `Project - ${project.name}`;
     $("#title").html(project.name);
     $("#i1").attr("src", imgName);
+
+    for (var i = 0; i < project.platforms.length; i++) {
+        $("#links").append(`<img src="images/icons/${project.platforms[i].icon}.png" class="icon">
+                            <a href="${project.platforms[i].href}"><h3>${project.platforms[i].name}</h3></a>`);
+    }
+
+    for (var i = 0; i < project.features.length; i++) {
+        const tech = getTechnology(project.features[i]);
+        $("#technologies").append(`<img src="images/icons/${tech.icon}.png" class="icon">
+                                   <h3>${tech.text}</h3>
+                                    `);
+    }
 }
 
 
@@ -45,6 +59,8 @@ $(document).on("click", "#next", function() {
 $(document).on("click", "#prev", function() {
     next(-1);
 });
+
+const getTechnology = (techName) => technologies.find(x => x.icon == techName);
 
 function swap() {
     var temp = visible;
