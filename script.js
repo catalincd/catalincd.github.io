@@ -11,6 +11,7 @@ $.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/
     loadProjects(json.mainProjects);
     loadGames(json.games);
     loadCSProjects(json.csprojects);
+    loadBio(json.bio);
 });
 
 
@@ -71,11 +72,16 @@ function loadCSProjects(csprojects) {
         var id = csprojects[i].id;
         var img = `images/${projects[id].thumbnail}0.png`;
         $("#csprojects").append(`<a href="${projects[id].href}" class="card">
-	    						<div class="glow"></div>
-	                            <img src="${img}">
-	                            <div class="bottomText">
-	                                <h1 class="h1Text">${projects[id].name}</h1>
-	                            </div>
-	                        </a>`);
+                                    <div class="glow"></div>
+                                    <img src="${img}">
+                                    <div class="bottomText">
+                                        <h1 class="h1Text">${projects[id].name}</h1>
+                                    </div>
+                                </a>`);
     }
+}
+
+function loadBio(bio) {
+    for (var i = 0; i < bio.length; i++)
+        $("#bioDescription").append(`<li><h4>${bio[i]}</h4></li>`);
 }
