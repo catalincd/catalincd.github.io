@@ -382,10 +382,15 @@ body {
 }
 
 footer {
+  height: 5rem;
   text-align: center;
   padding: 1.5rem;
   color: white;
   font-size: small;
+  display: flex;
+  width: 75%;
+  margin: 1rem auto;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -423,6 +428,10 @@ footer {
   #csprojects {
     width: 90%;
   }
+
+  footer {
+    width: 95%;
+  }
 }
 @media only screen and (max-width: 900px) {
   #bio #info h3 {
@@ -442,6 +451,27 @@ footer {
     border-top: 1px solid white;
     border-left: none;
   }
+}
+.contactLink {
+  display: flex;
+}
+
+.contactLink > img {
+  height: 1.25em;
+  margin: 1.5px 5px;
+}
+
+.contactLink > a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactLink > a:hover {
+  text-decoration: underline;
+}
+
+.contactLink > a:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

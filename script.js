@@ -1,7 +1,11 @@
 var json;
 var projects;
 var technologies;
-$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
+
+const localLink = `http://localhost:5000/`;
+const onlineLink = "https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json"
+
+$.getJSON(onlineLink, function(data) {
     //$.getJSON("http://localhost:5000/", function(data) {
     json = data;
     projects = json.projects;
@@ -12,6 +16,7 @@ $.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/
     loadGames(json.games);
     loadCSProjects(json.csprojects);
     loadBio(json.bio);
+    loadFooter(json.footer)
 });
 
 
@@ -84,4 +89,17 @@ function loadCSProjects(csprojects) {
 function loadBio(bio) {
     for (var i = 0; i < bio.length; i++)
         $("#bioDescription").append(`<li><h4>${bio[i]}</h4></li>`);
+}
+
+function loadFooter(footer) {
+    for(var i = 0; i < footer.length; i++)
+    {
+        $("footer").append(`<div class="contactLink">
+                                <img src="images/icons/${footer[i].icon}" class="skillIcon">
+                                <a href="${footer[i].link}"><h3>${footer[i].text}</h3></a>
+                            </div>`);
+    }
+
+    const year = new Date().getFullYear();
+    //$("footer").append(`<h4>Cătălin Dumitrescu ${year}</h4>`);
 }
