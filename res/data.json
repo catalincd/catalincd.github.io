@@ -19,6 +19,10 @@
         {
             "icon": "location_city",
             "text": "UVT FMI Informatică-Română"
+        },
+        {
+            "icon": "work",
+            "text": "Nokia OSS Intern"
         }
     ],
     "mainProjects": [{
