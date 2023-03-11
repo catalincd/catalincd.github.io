@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
 $body-background: rgb(11,
 0,
 43);
@@ -16,11 +18,65 @@ html {
 }
 
 body {
-    background: $body-background;
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+
+    -webkit-animation: bodyBackgroundAnim 18s ease infinite;
+    -moz-animation: bodyBackgroundAnim 18s ease infinite;
+    -o-animation: bodyBackgroundAnim 18s ease infinite;
+    animation: bodyBackgroundAnim 18s ease infinite;
+
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     letter-spacing: 0.1em;
+    padding-top: 3rem;
+}
+
+
+@-webkit-keyframes bodyBackgroundAnim {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+@-moz-keyframes bodyBackgroundAnim {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+@-o-keyframes bodyBackgroundAnim {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+@keyframes bodyBackgroundAnim {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
 }
 
 #csprojects {
@@ -201,11 +257,10 @@ body {
     width: 100%;
     display: grid;
     #skillsTable {
-        width: 100%;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        width: 60%;
+        margin: 2rem auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         align-content: center;
         justify-content: center;
@@ -225,7 +280,7 @@ body {
                 grid-template-columns: auto auto;
                 h3 {
                     line-height: 1.75;
-                    font-size: 20px;
+                    font-size: 23px;
                     color: $accent-color;
                 }
                 .skillIcon {
@@ -473,9 +528,14 @@ footer {
     margin: 1.5px 5px;
 }
 
-.contactLink > a{
+.contactLink > a {
     color: white;
     text-decoration: none;
+}
+
+#info a{
+    color: rgb(255, 255, 255);
+    font-weight:bolder;
 }
 
 .contactLink > a:hover{

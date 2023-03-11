@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +12,63 @@ html {
 }
 
 body {
-  background: #0b002b;
+  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background-size: 180% 180%;
+  -webkit-animation: bodyBackgroundAnim 18s ease infinite;
+  -moz-animation: bodyBackgroundAnim 18s ease infinite;
+  -o-animation: bodyBackgroundAnim 18s ease infinite;
+  animation: bodyBackgroundAnim 18s ease infinite;
   font-size: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 100;
   letter-spacing: 0.1em;
+  padding-top: 3rem;
 }
 
+@-webkit-keyframes bodyBackgroundAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes bodyBackgroundAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes bodyBackgroundAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bodyBackgroundAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 #csprojects {
   width: 55%;
   max-width: 1500px;
@@ -92,7 +143,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 .card .glow {
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 14%, white 58%, rgba(255, 255, 255, 0) 75%, white 92%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 14%, rgb(255, 255, 255) 58%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 92%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -195,11 +246,10 @@ body {
   display: grid;
 }
 #Skills #skillsTable {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 60%;
+  margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -220,7 +270,7 @@ body {
 }
 #Skills #skillsTable .skillsColumn .skill h3 {
   line-height: 1.75;
-  font-size: 20px;
+  font-size: 23px;
   color: white;
 }
 #Skills #skillsTable .skillsColumn .skill .skillIcon {
@@ -397,11 +447,9 @@ footer {
   #bio {
     width: 85%;
   }
-
   #bioDescription {
     width: 90%;
   }
-
   #galleryContainer {
     grid-template-columns: 3fr 1fr;
   }
@@ -410,7 +458,6 @@ footer {
   #bio {
     width: 100%;
   }
-
   #galleryContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -424,11 +471,9 @@ footer {
     border-top: 1px solid white;
     border-left: none;
   }
-
   #csprojects {
     width: 90%;
   }
-
   footer {
     width: 95%;
   }
@@ -437,7 +482,6 @@ footer {
   #bio #info h3 {
     white-space: normal;
   }
-
   #galleryContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -464,6 +508,11 @@ footer {
 .contactLink > a {
   color: white;
   text-decoration: none;
+}
+
+#info a {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
 }
 
 .contactLink > a:hover {

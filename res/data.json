@@ -1,32 +1,27 @@
 {
-    "bio": ["Am început să joc jocuri video la 5 ani, iar 12 am început să codez jocuri în AngelScript / Ethanon Engine. Un titlu dintre cele dezvoltate în acea perioadă este \"The Escape From Mars\", cu cod datând din 2015. Am continuat Game Development câțiva ani, o bună parte din jocuri fiind disponibile mai sus. În 2020 am publicat pe Google Playstore Cyberspace, dezvoltat în Unity, cu modele create în Blender și texturi create în Photoshop.",
-        "În 2017 m-am calificat la Etapa Națională a Olimpiadei de Informatică.",
-        "În clasa a 7-a am început să creez aplicații în Visual Studio, iar în 2019 am obținut Mențiune la etapa județeană a Olimpiadei de C#. În 2020 aplicația \"Ecosoft\", disponibilă mai sus, a obținut Premiul I la concursul \"Istorie și societate în dimensiune virtuală - Gorj 2020\". În 2021 am creat proiectul \"Sorting Visualisation\", proiect pentru Atestarea Competențelor Digitale.",
-        "În 2021 am obținul Premiul FMI la Concursul FMI (UVT) și în prezent sunt student în Anul I la UVT FMI-IR."
-    ],
-    "info": [{
+    "bio": [],
+    "info": [
+        {
             "icon": "badge",
             "text": "Cătălin-Constantin Dumitrescu"
         },
         {
-            "icon": "cake",
-            "text": "12 Nov 2002"
-        },
-        {
-            "icon": "school",
-            "text": "Colegiul Național \"Ecaterina Teodoroiu\" (2017-2021)"
+            "icon": "work",
+            "text": "Nokia OSS Level 2 (2022-2023)"
         },
         {
             "icon": "location_city",
-            "text": "UVT FMI Informatică-Română"
+            "text": "West University of Timișoara, Computer Science"
         },
         {
-            "icon": "work",
-            "text": "Nokia OSS Intern"
+            "icon": "article",
+            "text": "Check out my <a href='https://github.com/catalincd/'>GitHub</a> page!"
         }
+        
     ],
-    "mainProjects": [{
-            "id": "0"
+    "mainProjects": [
+        {
+            "id": "14"
         },
         {
             "id": "1"
@@ -38,7 +33,8 @@
             "id": "3"
         }
     ],
-    "games": [{
+    "games": [
+        {
             "id": "4"
         },
         {
@@ -63,7 +59,8 @@
             "id": "11"
         }
     ],
-    "csprojects": [{
+    "csprojects": [
+        {
             "id": "12"
         },
         {
@@ -71,25 +68,36 @@
         }
     ],
     "skills": [
-        ["0", "1", "2", "3", "20", "4", "5"],
-        ["6", "7", "8", "9", "10", "11", "12"],
-        ["21", "13", "14", "15", "16", "17", "18"]
+        [
+            "0",
+            "1",
+            "2",
+            "3",
+            "22"
+        ],
+        [
+            "7",
+            "8",
+            "9",
+            "21",
+            "23",
+            "6"
+        ]
     ],
-    "footer":[{
-        "icon": "github.png",
-        "text": "GitHub",
-        "link": "https://github.com/catalincd/"
-    },{
-        "icon": "mail.png",
-        "text": "Email",
-        "link": "mailto:cc.dumitrescu02@gmail.com"
-    },{
-        "icon": "instagram.webp",
-        "text": "Instagram",
-        "link": "https://www.instagram.com/catalin._.d/"
-    }]
-    ,
-    "technologies": [{
+    "footer": [
+        {
+            "icon": "github.png",
+            "text": "GitHub",
+            "link": "https://github.com/catalincd/"
+        },
+        {
+            "icon": "mail.png",
+            "text": "Email",
+            "link": "mailto:cc.dumitrescu02@gmail.com"
+        }
+    ],
+    "technologies": [
+        {
             "icon": "cpp",
             "text": "C++"
         },
@@ -119,7 +127,7 @@
         },
         {
             "icon": "unity",
-            "text": "Unity"
+            "text": "Unity3D"
         },
         {
             "icon": "ethanon",
@@ -140,7 +148,8 @@
         {
             "icon": "react",
             "text": "React Native"
-        }, {
+        },
+        {
             "icon": "vs",
             "text": "Visual Studio"
         },
@@ -174,11 +183,19 @@
         },
         {
             "icon": "arch",
-            "text": "Arch Linux"
+            "text": "Linux"
+        },
+        {
+            "icon": "bash",
+            "text": "Bash"
+        },
+        {
+            "icon": "opengl",
+            "text": "OpenGL"
         }
     ],
-
-    "projects": [{
+    "projects": [
+        {
             "name": "Stairs Designer",
             "thumbnail": "stairs",
             "images": "1",
@@ -196,9 +213,15 @@
             "images": "5",
             "href": "project.html?id=1",
             "repo": "",
-            "features": ["cs", "unity", "blender", "photoshop"],
+            "features": [
+                "cs",
+                "unity",
+                "blender",
+                "photoshop"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Google Playstore",
                     "icon": "playstore",
                     "href": "https://play.google.com/store/apps/details?id=com.encrypt3d.cyberspace"
@@ -223,9 +246,13 @@
             "images": "3",
             "href": "project.html?id=2",
             "repo": "",
-            "features": ["javascript", "react"],
+            "features": [
+                "javascript",
+                "react"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/SkinDb.apk"
@@ -257,9 +284,14 @@
             "images": "4",
             "href": "project.html?id=4",
             "repo": "",
-            "features": ["scite", "ethanon", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Bamboo Jump Final.apk"
@@ -284,9 +316,15 @@
             "images": "1",
             "href": "project.html?id=5",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Maze v0.5.2.apk"
@@ -311,9 +349,15 @@
             "images": "10",
             "href": "project.html?id=6",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Shoota v0.25.apk"
@@ -338,9 +382,14 @@
             "images": "1",
             "href": "project.html?id=7",
             "repo": "",
-            "features": ["scite", "ethanon", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Windows",
                     "icon": "windows",
                     "href": "downloads/TEFM-Windows.zip"
@@ -360,9 +409,15 @@
             "images": "5",
             "href": "project.html?id=8",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Hex Runner v0.26.apk"
@@ -387,9 +442,15 @@
             "images": "1",
             "href": "project.html?id=9",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Balance v0.1.apk"
@@ -414,9 +475,15 @@
             "images": "3",
             "href": "project.html?id=10",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Blocks.apk"
@@ -441,9 +508,15 @@
             "images": "5",
             "href": "project.html?id=11",
             "repo": "",
-            "features": ["scite", "ethanon", "photoshop", "adt"],
+            "features": [
+                "scite",
+                "ethanon",
+                "photoshop",
+                "adt"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Android",
                     "icon": "android",
                     "href": "downloads/Motion.apk"
@@ -468,9 +541,13 @@
             "images": "3",
             "href": "project.html?id=12",
             "repo": "",
-            "features": ["cs", "vs"],
+            "features": [
+                "cs",
+                "vs"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Windows",
                     "icon": "windows",
                     "href": "downloads/Sort Visualizer.zip"
@@ -490,9 +567,14 @@
             "images": "1",
             "href": "project.html?id=13",
             "repo": "",
-            "features": ["cs", "vs", "sql"],
+            "features": [
+                "cs",
+                "vs",
+                "sql"
+            ],
             "description": "",
-            "platforms": [{
+            "platforms": [
+                {
                     "name": "Windows",
                     "icon": "windows",
                     "href": "downloads/Ecosoft.zip"
@@ -501,6 +583,28 @@
                     "name": "Source Code",
                     "icon": "github",
                     "href": "https://github.com/catalincd/Ecosoft"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Alpha Engine",
+            "thumbnail": "ss",
+            "images": "4",
+            "href": "project.html?id=14",
+            "repo": "",
+            "features": [
+                "cpp",
+                "opengl",
+                "vs"
+            ],
+            "description": "",
+            "platforms": [
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/Engine"
                 }
             ],
             "controls": "",
