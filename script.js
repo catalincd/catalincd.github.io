@@ -6,7 +6,6 @@ var technologies;
 const onlineLink = "https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json"
 
 $.getJSON(onlineLink, function(data) {
-    //$.getJSON("http://localhost:5000/", function(data) {
     json = data;
     projects = json.projects;
     technologies = json.technologies;
@@ -41,8 +40,6 @@ function loadData(info) {
     for (var i = 0; i < info.length; i++) {
         $("#info").append(`<h3 class="material-icons-outlined">${info[i].icon}</h3><h3>${info[i].text}</h3>`);
     }
-
-    //$("#info").append(`<h3 class="material-icons-outlined">flowsheet</h3><h3>Check out my <a href='https://github.com/catalincd/'>GitHub</a> page!</h3>`);
 }
 
 function loadProjects(mainProjects) {

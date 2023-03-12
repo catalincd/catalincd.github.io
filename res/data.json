@@ -21,16 +21,16 @@
     ],
     "mainProjects": [
         {
-            "id": "14"
-        },
-        {
             "id": "1"
         },
         {
-            "id": "2"
+            "id": "14"
         },
         {
-            "id": "3"
+            "id": "15"
+        },
+        {
+            "id": "16"
         }
     ],
     "games": [
@@ -65,6 +65,12 @@
         },
         {
             "id": "13"
+        },
+        {
+            "id": "2"
+        },
+        {
+            "id": "3"
         }
     ],
     "skills": [
@@ -85,6 +91,11 @@
         ]
     ],
     "footer": [
+        {
+            "icon": "linkedin.png",
+            "text": "LinkedIn",
+            "link": "https://www.linkedin.com/in/c%C4%83t%C4%83lin-dumitrescu-150b8b269/"
+        },
         {
             "icon": "github.png",
             "text": "GitHub",
@@ -192,6 +203,18 @@
         {
             "icon": "opengl",
             "text": "OpenGL"
+        },
+        {
+            "icon": "androidstudio",
+            "text": "Android Studio"
+        },
+        {
+            "icon": "java",
+            "text": "Java"
+        },
+        {
+            "icon": "framework",
+            "text": "FTXUI"
         }
     ],
     "projects": [
@@ -199,7 +222,7 @@
             "name": "Stairs Designer",
             "thumbnail": "stairs",
             "images": "1",
-            "href": "https://designer.stairservice.com",
+            "href": "#",
             "repo": "",
             "features": "",
             "description": "",
@@ -270,7 +293,7 @@
             "name": "InfoSport",
             "thumbnail": "infosport",
             "images": "1",
-            "href": "https://infosport.ro",
+            "href": "#",
             "repo": "",
             "features": [],
             "description": "",
@@ -605,6 +628,60 @@
                     "name": "Source Code",
                     "icon": "github",
                     "href": "https://github.com/catalincd/Engine"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Sudoku Mobile",
+            "thumbnail": "sudok",
+            "images": "4",
+            "href": "project.html?id=15",
+            "repo": "",
+            "features": [
+                "java",
+                "androidstudio"
+            ],
+            "description": "",
+            "platforms": [
+                {
+                    "name": "Android",
+                    "icon": "android",
+                    "href": "https://github.com/catalincd/SudokuGame/releases/tag/BETA"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/SudokuGame"
+                }
+            ],
+            "controls": "",
+            "tools": ""
+        },
+        {
+            "name": "Resource Monitor",
+            "thumbnail": "resmon",
+            "images": "3",
+            "href": "project.html?id=16",
+            "repo": "",
+            "features": [
+                "cpp",
+                "framework",
+                "arch",
+                "vscode"
+            ],
+            "description": "",
+            "platforms": [
+                {
+                    "name": "UNIX",
+                    "icon": "tux",
+                    "href": "#"
+                },
+                {
+                    "name": "Source Code",
+                    "icon": "github",
+                    "href": "https://github.com/catalincd/resource-monitor"
                 }
             ],
             "controls": "",

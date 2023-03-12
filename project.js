@@ -7,8 +7,11 @@ var imgName;
 var visible = 1;
 var invisible = 2;
 var imgCurrent = 0;
-$.getJSON("https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json", function(data) {
-    //$.getJSON("http://localhost:5000/", function(data) {
+
+//const onlineLink = "http://localhost:5000/"
+const onlineLink = "https://raw.githubusercontent.com/catalincd/catalincd.github.io/main/res/data.json"
+
+$.getJSON(onlineLink, function(data) {
     json = data;
     project = json.projects[id];
     technologies = json.technologies;
@@ -59,6 +62,12 @@ $(document).on("click", "#next", function() {
 $(document).on("click", "#prev", function() {
     next(-1);
 });
+
+$(document).on("click", "#backButton", function() {
+    history.back();
+});
+
+
 
 const getTechnology = (techName) => technologies.find(x => x.icon == techName);
 

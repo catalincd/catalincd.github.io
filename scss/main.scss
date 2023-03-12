@@ -80,12 +80,12 @@ body {
 }
 
 #csprojects {
-    width: 55%;
+    width: 90%;
     max-width: 1500px;
     margin: 4rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 5rem;
+    grid-gap: 3rem;
 }
 
 #cards,
@@ -95,6 +95,8 @@ body {
     margin: 4rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-content: center;
+    justify-content: space-evenly;
     grid-gap: 3rem;
 }
 
@@ -545,4 +547,26 @@ footer {
 
 .contactLink > a:visited{
     color: white;
+}
+
+
+#backButton {
+    cursor: pointer;
+    color: white;
+    display: grid;
+    width: 5rem;
+    grid-gap: 0;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-6rem);
+    margin-left: 6.5rem;
+}
+
+#backButton span{
+    transform: translateX(0.75rem);
+}
+
+#backButton:hover p{
+    text-decoration: underline;
 }
